@@ -36,3 +36,9 @@ trunchar table student
 drop table student
 ~~~
 
+### 常用语句
+
+~~~sql
+
+~~~
+
