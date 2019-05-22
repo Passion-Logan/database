@@ -1,6 +1,6 @@
 ### 基础复习
 
-###### 创建表语句
+###### create语句
 
 ```sql
 create table student
