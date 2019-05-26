@@ -38,6 +38,15 @@ drop table student
 
 ### 用户和表空间
 
+```sql
+--查看当前登录用户
+show user
+--系统用户表
+desc dba_users
+--表空间分为:永久表空间，临时表空间，UNDO表空间
+--dba_tablespaces、user_tablespaces
+```
+
 
 
 ### 常用语句
