@@ -1,5 +1,7 @@
 ### 基础复习
 
+#### CRUD
+
 ###### create语句
 
 ```sql
@@ -22,19 +24,28 @@ insert into student (字段名，默认所有字段) values (对应字段的值�
 
 ###### update语句
 
-~~~sql
+```sql
 update student set stuname = '张三' where stuid = '1'
-~~~
+```
 
 ###### delete语句
 
-~~~sql
+```sql
 delete from student where stuid = '1'
 --删除所有数据,比delete快很多
 trunchar table student
 --删除表结构
 drop table student
-~~~
+```
+
+#### 复制
+
+```sql
+--在建表时复制
+create table table_name as select column...|* from table_old
+--在添加时复制
+insert into table_new select column...|* from table_old
+```
 
 ### 用户和表空间
 
@@ -47,19 +58,6 @@ desc dba_users
 --dba_tablespaces、user_tablespaces数据字典
 --dba_users、user_users数据字典
 ```
-
-### 复制表数据
-
-```sql
---在建表时复制
-create table table_name as select column...|* from table_old
---在添加时复制
-insert into table_new select column...|* from table_old
-```
-
-
-
-
 
 ### 常用语句
 
