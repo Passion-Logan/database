@@ -44,8 +44,20 @@ show user
 --系统用户表
 desc dba_users
 --表空间分为:永久表空间，临时表空间，UNDO表空间
---dba_tablespaces、user_tablespaces
+--dba_tablespaces、user_tablespaces数据字典
+--dba_users、user_users数据字典
 ```
+
+### 复制表数据
+
+```sql
+--在建表时复制
+create table table_name as select column...|* from table_old
+--在添加时复制
+insert into table_new select column...|* from table_old
+```
+
+
 
 
 
