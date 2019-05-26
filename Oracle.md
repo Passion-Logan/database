@@ -47,7 +47,13 @@ create table table_name as select column...|* from table_old
 insert into table_new select column...|* from table_old
 ```
 
-### 用户和表空间
+#### 约束
+
+```sql
+
+```
+
+#### 用户和表空间
 
 ```sql
 --查看当前登录用户
