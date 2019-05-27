@@ -49,8 +49,41 @@ insert into table_new select column...|* from table_old
 
 #### 约束
 
+包含：非空约束、主键约束、外键约束、唯一约束、检查约束
+
+##### 非空约束
+
 ```sql
---非空约束、主键约束、外键约束、唯一约束、检查约束
+--创建表的时候 添加 非空约束：在字段类型后添加 not null
+--修改表的时候 添加 非空约束：
+alter table table_name modify column_name datatype not null
+--修改表的时候 去除 非空约束：
+alter table table_name modify column_name datatype null
+```
+
+##### 主键约束
+
+```sql
+--一张表只能有一个主键，可以由一个或多个字段能构成，称为联合主键或者复合主键
+-- 查看表的主键约束 可以查看 user_constraint 字典表
+select constraint_name from user_constraint where table_name = ''
+--创建表的时候设置 主键约束：在字段那类型后添加关键字 primary key
+constraint 约束名字 primary key(一个或多个字段名称)
+--修改表的时候设置 主键约束：
+alter table table_name add constraint 约束名字 primary key(一个或多个字段名称)
+--修改约束的名称
+alter table table_name rename constraint old_name to new_name
+--删除主键约束
+alter table table_name disable(禁用约束)|enable(启用约束) constraint 约束名字
+--直接删除约束，不禁用
+alter table table_name drop constraint 约束名字
+alter table table_name drop primary key[cascade] -- cascade 级联删除，删除其余有关联的约束
+```
+
+##### 外键约束
+
+```sql
+
 ```
 
 #### 用户和表空间
