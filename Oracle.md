@@ -38,7 +38,7 @@ trunchar table student
 drop table student
 ```
 
-#### 复制
+#### 复制数据
 
 ```sql
 --在建表时复制
@@ -50,7 +50,7 @@ insert into table_new select column...|* from table_old
 #### 约束
 
 ```sql
-
+--非空约束、主键约束、外键约束、唯一约束、检查约束
 ```
 
 #### 用户和表空间
