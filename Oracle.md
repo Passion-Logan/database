@@ -83,7 +83,7 @@ alter table table_name drop primary key[cascade] -- cascade 级联删除，删�
 ##### 外键约束
 
 ```sql
-
+--创建时添加外键约束
 ```
 
 #### 用户和表空间
