@@ -87,6 +87,13 @@ alter table table_name drop primary key[cascade] -- cascade 级联删除，删�
 -- 在类型后 添加 关键字 references table_name(字段名), 关键字后的是主表，前面的是从表，主表中的字段 必须是主键，主从表相应的字段必须是同一数据类型
 -- 方法二
 constraint 外键名称 foreign key(字段名) references table_name(字段名)[on delete cascade]--级联删除
+-- 在修改表的时候添加外键约束
+alter table table_name add constraint 外键名称 foreign key(字段名) references table_name(字段名)[on delete cascade]
+-- 删除外键约束
+-- 方法一:禁用
+alter table table_name disable(禁用约束)|enable(启用约束) constraint 约束名字
+-- 方法二:删除约束
+alter table table_name drop constraint 约束名字
 ```
 
 #### 用户和表空间
