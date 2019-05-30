@@ -101,8 +101,15 @@ alter table table_name drop constraint 约束名字
 ```sql
 --唯一约束与主键约束的区别：主键非空，唯一允许有一个可为空；主键只能有一个，唯一约束可以有多个
 -- 创建表的时候设置唯一约束
+-- 在字段类型后添加关键字 unique
+constraint 约束名字 unique(字段名称)
 -- 修改表的时候设置唯一约束
+alter table table_name add constraint 外键名称 unique(字段名)
 -- 删除唯一约束
+-- 方法一:禁用
+alter table table_name disable(禁用约束)|enable(启用约束) constraint 约束名字
+-- 方法二:删除约束
+alter table table_name drop constraint 约束名字
 ```
 
 #### 用户和表空间
