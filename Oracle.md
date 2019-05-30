@@ -96,6 +96,12 @@ alter table table_name disable(禁用约束)|enable(启用约束) constraint 约
 alter table table_name drop constraint 约束名字
 ```
 
+##### 唯一约束
+
+```sql
+
+```
+
 #### 用户和表空间
 
 ```sql
