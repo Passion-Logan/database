@@ -143,6 +143,14 @@ desc dba_users
 --dba_users、user_users数据字典
 ```
 
-### 常用语句
+### 常用函数及知识点
 
 - select 中 去重 关键字 `distinct`
+
+- decode(colunm_name, value1, result1, ..., defaultvalue)
+
+  ```sql
+  select decode(stuname, 'admin', '管理员', 'teacher', '教师', '其他用户') from student
+  ```
+
+  
