@@ -51,6 +51,8 @@ insert into table_new select column...|* from table_old
 
 包含：非空约束、主键约束、外键约束、唯一约束、检查约束
 
+数据字典`user_costraints`
+
 ##### 非空约束
 
 ```sql
@@ -143,3 +145,4 @@ desc dba_users
 
 ### 常用语句
 
+- select 中 去重 关键字 `distinct`
