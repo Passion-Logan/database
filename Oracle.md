@@ -112,6 +112,23 @@ alter table table_name disable(禁用约束)|enable(启用约束) constraint 约
 alter table table_name drop constraint 约束名字
 ```
 
+##### 检查约束
+
+```sql
+-- 创建表的时候设置检查约束
+-- 在字段类型后添加关键字 check(约束条件，可为表达式)
+constraint 约束名字 check(约束条件)
+-- 修改表的时候设置检查约束
+alter table table_name add constraint 约束名称 check(约束条件)
+-- 删除检查约束
+-- 方法一:禁用
+alter table table_name disable(禁用约束)|enable(启用约束) constraint 约束名字
+-- 方法二:删除约束
+alter table table_name drop constraint 约束名字
+```
+
+
+
 #### 用户和表空间
 
 ```sql
