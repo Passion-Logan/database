@@ -153,4 +153,4 @@ desc dba_users
   select decode(stuname, 'admin', '管理员', 'teacher', '教师', '其他用户') from student
   ```
 
-  
+- `wm_concat` 行转列
