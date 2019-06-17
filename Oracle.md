@@ -162,3 +162,5 @@ desc dba_users
   应该优先使用where 后使用having，因为where是先过滤后分组，having是先分组后过滤
 
 - where 必须在 group by 之前，order by 在group by之后
+
+- group by rollup(a,b) == group a,b + group by a + group by b,比较适用于报表统计
