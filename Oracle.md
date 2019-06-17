@@ -156,3 +156,5 @@ desc dba_users
 - `wm_concat` 行转列
 
 - `NVL(obj, return)` 替换空值
+
+- having 子句过滤分组的条件，与where的区别：不能在where中使用分组函数，可以在having中使用
