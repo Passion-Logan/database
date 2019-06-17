@@ -154,3 +154,5 @@ desc dba_users
   ```
 
 - `wm_concat` 行转列
+
+- `NVL(obj, return)` 替换空值
