@@ -157,6 +157,8 @@ desc dba_users
 
 - `NVL(obj, return)` 替换空值
 
-- having 子句过滤分组的条件，与where的区别：不能在where中使用分组函数，可以在having中使用
+- having 子句过滤分组的条件，与where的区别：不能在where中使用分组函数，可以在having中使用；
 
-- where 必须在 group by 之前
+  应该优先使用where 后使用having，因为where是先过滤后分组，having是先分组后过滤
+
+- where 必须在 group by 之前，order by 在group by之后
