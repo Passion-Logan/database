@@ -164,3 +164,7 @@ desc dba_users
 - where 必须在 group by 之前，order by 在group by之后
 
 - group by rollup(a,b) == group a,b + group by a + group by b,比较适用于报表统计
+
+- `左外连接`当连接条件不成立的时候，等号左边的表依然被包含
+
+- `右外连接`当连接条件不成立的时候，等号右边的表依然被包含
