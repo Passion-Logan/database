@@ -12,7 +12,7 @@ create table student
     sex  char(1) not null,
     enroldate date,--入学时间
 )
--- 设置自增
+-- 设置自增 
 create sequence stuid start with 1 increment by 1;   --建立了一个从1开始每次加1的序列。
 ```
 
